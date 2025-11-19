@@ -1,0 +1,7 @@
+{
+  "name": "DivisApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
