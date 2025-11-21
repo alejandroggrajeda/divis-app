@@ -13,7 +13,7 @@ Una aplicación móvil desarrollada con Ionic React y Capacitor que incluye un c
 1. Clonar el repositorio:
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/alejandroggrajeda/divis-app
 cd divis-app
 ```
 
