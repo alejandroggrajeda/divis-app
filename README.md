@@ -21,7 +21,6 @@ pnpm add -g @ionic/cli
 
 ```bash
 git clone https://github.com/alejandroggrajeda/divis-app
-git clone https://github.com/alejandroggrajeda/divis-app
 cd divis-app
 ```
 
