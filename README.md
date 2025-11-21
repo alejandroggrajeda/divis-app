@@ -2,7 +2,8 @@
 
 Una aplicación móvil desarrollada con Ionic React y Capacitor que incluye un conversor de divisas.
 
-<img width="458" height="847" alt="image" src="https://github.com/user-attachments/assets/183695f3-cd4a-488f-90bb-c35c597baee2" />
+<img width="458" height="847" alt="demo-img" src="https://github.com/user-attachments/assets/40f381d9-49b2-457b-9660-7be92f918427" />
+
 
 
 ## Requisitos Previos
