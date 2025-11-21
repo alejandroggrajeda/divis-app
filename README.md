@@ -7,17 +7,24 @@ Una aplicación móvil desarrollada con Ionic React y Capacitor que incluye un c
 - Node.js (versión 16 o superior)
 - pnpm (gestor de paquetes)
 - Android Studio (para desarrollo Android)
+- Ionic CLI (opcional, instalado globalmente para conveniencia)
 
 ## Instalación
 
-1. Clonar el repositorio:
+1. Instalar Ionic CLI globalmente (opcional, si no lo tienes y quieres usar comandos de Ionic directamente):
 
 ```bash
-git clone <url-del-repositorio>
+pnpm add -g @ionic/cli
+```
+
+2. Clonar el repositorio:
+
+```bash
+git clone https://github.com/alejandroggrajeda/divis-app
 cd divis-app
 ```
 
-2. Instalar las dependencias:
+3. Instalar las dependencias:
 
 ```bash
 pnpm install
@@ -27,20 +34,44 @@ pnpm install
 
 ### Desarrollo Web
 
-Iniciar el servidor de desarrollo:
+Iniciar el servidor de desarrollo con Vite:
 
 ```bash
 pnpm dev
 ```
 
-La aplicación estará disponible en `http://localhost:5173`
+O con Ionic CLI (si está instalado globalmente):
+
+```bash
+ionic serve
+```
+
+O sin instalación global:
+
+```bash
+npx @ionic/cli serve
+```
+
+La aplicación estará disponible en `http://localhost:5173` o `http://localhost:8100` (Ionic).
 
 ### Compilación
 
-Compilar el proyecto para producción:
+Compilar el proyecto para producción con Vite:
 
 ```bash
 pnpm build
+```
+
+O con Ionic CLI (si está instalado globalmente):
+
+```bash
+ionic build
+```
+
+O sin instalación global:
+
+```bash
+npx @ionic/cli build
 ```
 
 Vista previa de la compilación:
@@ -57,6 +88,54 @@ Ejecutar el linter:
 pnpm lint
 ```
 
+### Capacitor (Aplicación Nativa)
+
+Sincronizar cambios con Capacitor:
+
+```bash
+npx cap sync
+```
+
+O con Ionic CLI (si está instalado globalmente):
+
+```bash
+ionic cap sync
+```
+
+O sin instalación global:
+
+```bash
+npx @ionic/cli cap sync
+```
+
+Construir y abrir en Android Studio:
+
+```bash
+npx cap sync android
+npx cap open android
+```
+
+Construir y abrir en Xcode (macOS):
+
+```bash
+npx cap sync ios
+npx cap open ios
+```
+
+O con Ionic CLI:
+
+```bash
+ionic cap sync ios
+ionic cap open ios
+```
+
+O sin instalación global:
+
+```bash
+npx @ionic/cli cap sync ios
+npx @ionic/cli cap open ios
+```
+
 ## Desarrollo Móvil
 
 ### Android
@@ -67,16 +146,52 @@ pnpm lint
 npx cap sync android
 ```
 
+O con Ionic CLI (si está instalado globalmente):
+
+```bash
+ionic cap sync android
+```
+
+O sin instalación global:
+
+```bash
+npx @ionic/cli cap sync android
+```
+
 2. Abrir en Android Studio:
 
 ```bash
 npx cap open android
 ```
 
+O con Ionic CLI:
+
+```bash
+ionic cap open android
+```
+
+O sin instalación global:
+
+```bash
+npx @ionic/cli cap open android
+```
+
 3. Ejecutar la aplicación desde Android Studio o usar:
 
 ```bash
 npx cap run android
+```
+
+O con Ionic CLI:
+
+```bash
+ionic cap run android
+```
+
+O sin instalación global:
+
+```bash
+npx @ionic/cli cap run android
 ```
 
 ## Estructura del Proyecto
